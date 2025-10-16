@@ -1,0 +1,24 @@
+# Analisis-de-codigo-y-Dependencia
+
+i. Identifique las clases y lo que éstas representan. Luego, establezca una descripción textual breve del contexto problema.
+
+La clase Calculadora, como su nombre lo indica, reliza operaciones númericas (limitado a suma y multiplicación) entre dos números enteros.
+
+La clase CarroCompra simula un carrito de compras con 5 productos, de los que se puede sacar y mostrar su total, utilizando la clase Calculadora.
+
+Esto significa que hay una dependencia, ya que la clase CarroCompra requiere de la calculadora para su funcionamiento, pero no vice-versa.
+
+ii. Analice los atributos y métodos de cada clase, luego, identifique las relaciones existentes entre las clases identificadas y establezca una descripción textual breve del contexto problema..
+
+Clase Calculadora
+Esta clase tiene dos atributos, que son dos números enteros privados, con sus setters. Con estos dos números, que comienzan en 0 si no se asignan valores, se puede realizar suma y multiplicacion
+
+Clase CarroCompra
+Esta clase crea un carro con una lista de valores enteros de tamaño 2, con una lista privada de enteros de tamaño 5 en su interior, estas serviran como la cantidad y el precio de los productos, de tal forma que quede: [[cant1,cant2,cant3,cant4,cant5],[precio1,precio2,precio3,precio4,precio5]]. Con el constructor, se establecen todas cantidades como 1 y todos los pŕecios como 1000. Esta clase además tiene 3 métodos. 
+El único método público es el mostrarTotal, que imprime por consola el total, llamando al método privado calcularTotal para realizar el cálculo. 
+El método calcularTotal a su vez ocupa el método subTotal para ir sumando los subtotales en un total y despues devolverlos.
+Finalmente, el método subTotal crea un objeto Calculadora con la cantidad y el precio como parámetros iniciales y ocupa el método multiplicar de esta, devolviendo el resultado de este. 
+
+iii. De lo anterior, establezca una representación detallada del código fuente, usando un diagrama de clases UML y la herramienta de modelado Visual Paradigm.
+
+iv. Genere un código fuente Java a partir de su modelo de clases, de forma automática.
