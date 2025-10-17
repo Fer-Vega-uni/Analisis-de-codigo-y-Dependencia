@@ -6,7 +6,7 @@ La clase Calculadora, como su nombre lo indica, reliza operaciones númericas (l
 
 La clase CarroCompra simula un carrito de compras con 5 productos, de los que se puede sacar y mostrar su total, utilizando la clase Calculadora.
 
-Esto significa que hay una dependencia, ya que la clase CarroCompra requiere de la calculadora para su funcionamiento, pero no vice-versa.
+Por lo que nuestro contexto es un carrito de compras (que para efectos de lo establecido solo tiene 5 productos) del cual podemos calculaar su valor total y mostrarlo por consola.
 
 ii. Analice los atributos y métodos de cada clase, luego, identifique las relaciones existentes entre las clases identificadas y establezca una descripción textual breve del contexto problema..
 
@@ -18,6 +18,8 @@ Esta clase crea un carro con una lista de valores enteros de tamaño 2, con una 
 El único método público es el mostrarTotal, que imprime por consola el total, llamando al método privado calcularTotal para realizar el cálculo. 
 El método calcularTotal a su vez ocupa el método subTotal para ir sumando los subtotales en un total y despues devolverlos.
 Finalmente, el método subTotal crea un objeto Calculadora con la cantidad y el precio como parámetros iniciales y ocupa el método multiplicar de esta, devolviendo el resultado de este. 
+
+Esto significa que hay una dependencia, ya que la clase CarroCompra requiere de la calculadora para su funcionamiento, pero no vice-versa.
 
 iii. De lo anterior, establezca una representación detallada del código fuente, usando un diagrama de clases UML y la herramienta de modelado Visual Paradigm.
 
